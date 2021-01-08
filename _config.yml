@@ -45,8 +45,8 @@ github:
   username: echoyuanliang
 gitalk:
     repo: echoyuanliang.github.io
-    client_id: a68c80416dfcbddfb36e
-    client_secret: e779c75fe7bfb643491cbd8958f9060ff78a94bf
+    client_id: 5e8d5a5e5539b6191254
+    client_secret: 35d632e0c4611abac649f06a599ed99cb224edb8
 
 
 # If you want to link only specific pages in your header, uncomment
