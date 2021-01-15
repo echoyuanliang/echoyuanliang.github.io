@@ -1,63 +1,40 @@
+# Basic
+title: 程序小屋
+subtitle:  一个人的程序小屋
+description: 记录自己的成长史
 
-title: 学以致用
-author: echoyuanliang
-email: echoyuanliang@gmail.com
-description: ""
-show_excerpts: true # set to true to show excerpts on the homepage
-# baseurl: /texture
+url: "https://echoyuanliang.github.io"
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
+permalink: /:year/:month/:title/
 
-paginate: 15
-paginate_path: "page/:num"
-baseurl: ""
+# Format
+highlighter: rouge
 
-permalink: /posts/:title/
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: green
 
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      styles : [highlight.css, tags.css]
-      scripts : [tags.js, script.js]
+# The blog button should not be removed.
+blog_button:
+    title: Blog
+    description: Visit blog
 
 
-texture:
-  title: 学以致用
-  tagline: DevOps
-  date_format: "%b %-d, %Y" #"%Y-%m-%d"
-  style: black
-  showNav: true
-  showPicker: false
+# Pagination
+plugins: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
 
-  # generate social links in footer
-  social_links:
-    github:  echoyuanliang
-    email: echoyuanliang@gmail.com
-github:
-  username: echoyuanliang
-gitalk:
-    repo: echoyuanliang.github.io
-    client_id: 5e8d5a5e5539b6191254
-    client_secret: 35d632e0c4611abac649f06a599ed99cb224edb8
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo: 
+    
+# Social
+social:
+    github: echoyuanliang
+    mail: echoyuanliang@gmail.com
 
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
-# theme: texture
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-#  - jekyll-feed
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
